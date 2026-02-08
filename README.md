@@ -15,7 +15,11 @@ build/
   windows-msys2.md
 artifacts/
   linux/
+    bin/ffmpeg
+    lib/*.so*
   macos/
+    bin/ffmpeg
+    lib/*.dylib
   windows/
 LICENSES/
   LGPL-2.1.txt
@@ -25,8 +29,8 @@ build_flags.txt
 
 ## Usage (Linux/macOS)
 1. Run the build script for your OS.
-2. Copy the resulting `ffmpeg` into `artifacts/<os>/`.
-3. Update `build_flags.txt` and `SOURCE_URL.txt`.
+2. The script stages `bin/` and `lib/` into `artifacts/<os>/`.
+3. Update `build_flags.txt` and `SOURCE_URL.txt` if you change version/flags.
 
 ## Compliance
 - Keep the **exact source** used for the build.
