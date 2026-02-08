@@ -15,7 +15,9 @@ jobs:
           sudo apt-get install -y libvpx-dev yasm nasm pkg-config
 
       - name: Build FFmpeg (LGPL)
-        run: ./build/linux.sh
+        run: |
+          chmod +x ./build/linux.sh
+          ./build/linux.sh
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
