@@ -1,0 +1,13 @@
+# Build/temp
+build/tmp/
+src/
+
+# Artifacts (ship via releases)
+artifacts/**/ffmpeg*
+artifacts/**/ffprobe*
+artifacts/**/ffplay*
+artifacts/**/ffserver*
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1 @@
+./configure --disable-gpl --disable-nonfree --enable-libvpx --enable-shared --disable-static --disable-programs --enable-ffmpeg
